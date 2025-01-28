@@ -20,9 +20,9 @@
     <br>
     <br>
     <!-- Main  -->
-    <div class="flex-grow container mx-auto">
-        <div>
-
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 ">
+            
             <!-- Introductory Text -->
             <div class="text-center">
                 <h2 class="text-2xl font-semibold mb-4">Welcome! Generate Blogs with the Help of Artifical Intellegence</h2>
@@ -30,6 +30,18 @@
                     Just enter the youtube link of the video you want to generate a blog on and we will do the rest.
                 </p>
             </div>
+
+            <br>
+
+            <!-- Youtube Link -->
+             <div>
+                <h2 class="text-xl mb-4 font-semibold">Enter youtube video link</h2>
+                <div class="flex space-x-4">
+                    <input id="youtube-link" type="url" placeholder="Paste the youtube link here" class="flex-grow p-2 border-blue-400 rounded-l-md">
+                    <button id="generateBlogButton" class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-color">Generate</button>
+                </div>
+             </div>
+             
         </div>
     </div>
 </body>
