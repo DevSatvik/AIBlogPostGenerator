@@ -55,7 +55,10 @@ ROOT_URLCONF = 'ai_blog_generator_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # Tell Django where to look for HTML files
+        # Django will look in the templates folder in the base directory 
+        # of the project (in the templates folder in the ai_blog_generator_app)
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
